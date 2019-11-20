@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kupovina karata</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/kupovinakarata.css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <div id = "stranica">
+
+    <div id ="bar">
+    
+  <ul id="bar">
+    <li id ="logo"><img src="img/obradjeno.png"></li>
+    <li><a href="index.html">Pocetna</a></li>
+    <li><a href="onama.html">O nama</a> </li>
+    <li><a href="kupovinakarata.html">Kupovina karata</a> </li>
+    <li>Red voznje</li>
+    <li>Iznajmljivanje vozila</li>
+    <li>Medjunarodni transport</li>
+    <li><a href="poslovnice.html">Poslovnice</a> </li>
+    <li>Kontakt</li>
+</ul>
+    
+    </div>
+
+    <div id = "centar">
+
+        <div id = "leviBar">
+
+                <div id="trenutnoVreme">
+                        <h2>Trenutno vreme:</h2>
+                    </div>
+
+                <label for="ime">Korisnicko ime:</label>
+                <input type="text" id="ime" />
+                <br>
+                <label for="sifra">Lozinka:</label>
+            <input type="text" id="sifra" />
+            <br>
+            <input type="submit" class="prijaviSe" value="Prijavi se">
+            <input type="submit" class="prijaviSe" value="Registracija">
+        </div>
+
+
+
+        <div id = "desniBar">
+            <div id="destinacija">
+                    <img src = "img/crvena2.png">
+            <select id="polaziste">
+                   
+                <option value="Beograd">Beograd</option>
+                <option value="Nis">Nis</option>
+                <option value="Novi Sad">Novi Sad</option>
+                
+                <option value="mesto" selected hidden> Izaberite polaziste</option>
+                </select> 
+            
+            
+            
+                <img src="img/plava2.png">
+                <select id="odrediste" >
+                     
+                    <option value="Beograd">Beograd</option>
+                    <option value="Nis">Nis</option>
+                    <option value="Novi Sad">Novi Sad</option>
+                
+                    <option value="mesto" selected hidden>Izaberite odrediste</option>
+                    </select>
+            </div>
+                    <br>
+                    <div>
+                   
+                    <input type="text" id="datum" value="Unesite datum u formatu dd.mm.gggg." />
+                    </div>
+                    <br>
+            
+                    <select id="vreme">
+                            <option value="5:45">5:45</option>
+                            <option value="8:15">8:15</option>
+                            <option value="10:00">10:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="18:10">18:10</option>
+                            <option value="20:05">20:05</option>
+                            <option value="22:35">22:35</option>
+                        <option value="vremePolaska" hidden selected>Izaberite vreme polaska</option>
+            
+                        </select> 
+            
+                <br>
+                <br>
+                <div id="popusti">
+            <input type="radio" name="popust" class="popust" value="bez popusta" checked><p>Bez popusta</p>
+            <input type="radio" name="popust" class="popust" value="student/djak"><p>Student/Djak</p>
+            <input type="radio" name="popust" class="popust" value="penzioner"><p>Penzioner</p>
+            <input type="radio" name="popust" class="popust" value="dete"><p>Dete od 0-10 godina</p>
+            <input type="radio" name="popust" class="popust" value="invalid"><p>Invalid</p>
+            </div>
+            
+
+                <div id="smerovi">
+            <input type="radio" name="smer" value="1smer" checked>Jedan smer<br>
+            <img src="img/1smer.png"> 
+            <input type="radio" name="smer" value="2smera">Povratna<br>
+            <img src = "img/2smera.png">
+                </div>
+             
+            <input type="submit" id="kupiKartu" value="Kupi kartu">
+            
+            <h3 id = "cena">Cena: </h3>
+            
+            </div>
+
+
+
+    
+
+
+    </div>
+
+    <div id = "bottom">
+            <div id="kontakt">
+
+                <div id="lokacija">
+                    <p id = "firma">SP LASTA BEOGRAD </p>
+                    <img src = "img/logo-trans.png">
+                  <p id = adresa><br> Autoput Beograd-Nis 4 <br>11000 Beograd</p> 
+                </div>
+                
+        <ul>
+            <li id = "naslov"><p>INFO I REZERVACIJE</p></li>
+            <li>0800 334 334</li>
+            <li>+381 11 3348 555</li>
+            <li>+381 11 3348 556</li>
+            <li>+381 11 3348 557</li>
+        </ul>
+
+        <ul>
+            <li class = "naslov"><p>REKLAMACIJE</p></li>
+            <li>+381 11 4351 231</li>
+        </ul>
+
+        <ul>
+            <li class = "naslov"><p>ODNOSI S JAVNOSCU</p></li>
+            <li>+381 11 4351 512</li>
+        </ul>
+
+        <ul>
+                <li class = "naslov"><p>DIREKCIJA</p></li>
+                <li>+381 11 3402 300</li>
+            </ul>
+
+            <ul>
+                    <li class = "naslov"><p>MEDJUNARODNI TRANSPORT</p></li>
+                    <li>0900 334 334</li>
+                </ul>
+            </div>
+            <ul id= "logoLista">
+                    <li><img   src = "img/youtube.png"> </li>
+                    <li><img   src = "img/facebook.png"> </li>
+                    <li><img   src = "img/instagram.png"> </li>
+                    <li><img   src = "img/twitter.png"> </li>
+                    <li><img   src = "img/viber.png"> </li>
+                    <li><img   src = "img/whatsapp.png"> </li>
+                    <li><img   src = "img/google-plus.png"> </li>
+                </ul>
+                <p> Novak Cojbasic & Njegos Trajkovic. 2019. Sva prava zadrzana</p>
+       </div> 
+    </div>
+    <script src="js/karte.js"></script>
+</body>
+</html>
+
+

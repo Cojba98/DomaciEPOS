@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Poslovnice</title>
+    <link rel="stylesheet" type="text/css" href="css/poslovnice.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <style>
+        .accordion {
+          background-color: #eee;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+li{
+    font-size: 15px;
+}
+
+        .active, .accordion:hover {
+          background-color: #E0102B;
+        }
+        
+        .panel {
+          padding: 0 18px;
+          background-color: white;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+        }
+        h2{
+            font-size: 40px;
+            color: #E0102B;
+            text-justify: auto;
+            text-align: center;
+        }
+        </style>
+    
+</head>
+<body>
+    
+    <div id = "stranica">
+
+    <div id ="bar">
+    
+  <ul id="bar">
+    <li id ="logo"><img src="img/obradjeno.png"></li>
+    <li><a href="index.html">Pocetna</a></li>
+    <li><a href="onama.html">O nama</a> </li>
+    <li><a href="kupovinakarata.html">Kupovina karata</a> </li>
+    <li>Red voznje</li>
+    <li>Iznajmljivanje vozila</li>
+    <li>Medjunarodni transport</li>
+    <li><a href="poslovnice.html">Poslovnice</a> </li>
+    <li>Kontakt</li>
+</ul>
+    
+    </div>
+
+    <div id = "centar">
+
+        <div id = "leviBar">
+
+         
+
+                <label for="ime">Korisnicko ime:</label>
+                <input type="text" id="ime" />
+                <br>
+                <label for="sifra">Lozinka:</label>
+            <input type="text" id="sifra" />
+            <br>
+            <input type="submit" class="prijaviSe" value="Prijavi se">
+            <input type="submit" class="prijaviSe" value="Registracija">
+        </div>
+
+
+
+        <div id = "desniBar2">
+            
+            <img src="img/srbijaTrans.png">
+
+            
+
+            <div id="okruzi">
+                    <h2>Poslovnice SP Lasta:</h2>
+                    <p>Izaberite odgovarajuci okrug</p>
+            
+            <button class="accordion">Grad Beograd</button>
+            <div class="panel">
+              <ul>
+                  <li>Svetozara Ćorovića 11
+                        + 381 63 271 700</li>
+                  <li>Balkanska 35-39
+                        + 381 11 2684 381</li>
+                  <li>Medaković 3
+                     + 381 64 832 3312</li>
+              </ul>
+            </div>
+
+            <button class="accordion">Severno-Bački</button>
+            <div class="panel">
+              <ul>
+                  <li>Subotica +381 63 389 709</li>
+                  
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Severno-Banatski</button>
+            <div class="panel">
+              <ul>
+                  <li>Zrenjanin + 381 23 565 566</li>
+                  
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Južno-Banatski</button>
+            <div class="panel">
+              <ul>
+                  
+                  
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Zapadno-Bački</button>
+            <div class="panel">
+              <ul>
+                  <li>Novi Sad +381 21 444 999</li>
+                  
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Južno-Bački</button>
+            <div class="panel">
+              <ul>
+                  
+                  
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Sremski</button>
+            <div class="panel">
+              <ul>
+                  <li>Ruma + 381 64 1449 054</li>
+                  <li>Sremska Mitrovica +381 65 2949 154</li>
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Mačvanski</button>
+            <div class="panel">
+              <ul>
+                  <li>Sabac +381 64 8323 338</li>
+                  <li>Loznica +381 15 893 760</li>
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Kolubarski</button>
+            <div class="panel">
+              <ul>
+                  <li>Valjevo +381 14 221 630</li>
+                  
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Podunavski</button>
+            <div class="panel">
+              <ul>
+                  <li>Smederevo +381 26 4622 245</li>
+                  <li>Smederevska Palanka +381 26 317 199</li>
+                  <li>Velika Plana +381 26 514 222</li>
+              </ul>
+            </div>
+
+            <button class="accordion">Braničevski</button>
+            <div class="panel">
+              <ul>
+                  
+                  
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Šumadijski</button>
+            <div class="panel">
+              <ul>
+                  <li>Kragujevac +381 34 365 035</li>
+                  
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Pomoravski</button>
+            <div class="panel">
+              <ul>
+                  <li>Paracin +381 35 564 444</li>
+                  <li>Svilajnac +381 35 314 244</li>
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Borski</button>
+            <div class="panel">
+              <ul>
+                  <li>Negotin + 381 19 542 999</li>
+                  
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Zaječarski</button>
+            <div class="panel">
+              <ul>
+                  
+                  
+                  
+              </ul>
+            </div><button class="accordion">Zlatiborski</button>
+            <div class="panel">
+              <ul>
+                  <li>Zlatibor + 381 69 651 415</li>
+                  
+                  
+              </ul>
+            </div><button class="accordion">Moravički</button>
+            <div class="panel">
+              <ul>
+                  <li>Cacak +381 32 3434 10</li>
+                  
+                  
+              </ul>
+            </div><button class="accordion">Raški</button>
+            <div class="panel">
+              <ul>
+                  <li>Novi Pazar +381 20334850</li>
+                  <li>Kraljevo +381 36 355 851</li>
+                  
+              </ul>
+            </div><button class="accordion">Rasinski </button>
+            <div class="panel">
+              <ul>
+                  <li>Varvarin +381 64 8323 327</li>
+                  <li>Krusevac +381 37 440 445</li>
+                  
+              </ul>
+            </div><button class="accordion">Nišavski</button>
+            <div class="panel">
+              <ul>
+                  <li>Aleksinac +381 18 804 530</li>
+                  <li>Nis +381 18 241 145</li>
+                  
+              </ul>
+            </div><button class="accordion">Toplički</button>
+            <div class="panel">
+              <ul>
+                  <li>Blace +381 27 371 256</li>
+                  <li>Prokuplje +381 27 321 864</li>
+                  <li>Prolom banja +381 61 131 3814</li>
+                  <li>Kursumlija +381 27 381 038</li>
+              </ul>
+            </div><button class="accordion">Pirotski</button>
+            <div class="panel">
+              <ul>
+                  
+                  
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Jablanički</button>
+            <div class="panel">
+              <ul>
+                  <li>Leskovac +381 16 215 550</li>
+                  
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Pčinjski</button>
+            <div class="panel">
+              <ul>
+                  <li>Surdulica +381 65 638 2494</li>
+                  <li>Vladicin Han +381 17 474 444</li>
+                  <li>Vranje +381 17 420 842</li>
+              </ul>
+            </div>
+
+           <button class="accordion">Kosovski</button>
+            <div class="panel">
+              <ul>
+                  
+                  
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Pećki</button>
+            <div class="panel">
+              <ul>
+                  
+                  
+                  
+              </ul>
+            </div>
+
+            <button class="accordion">Prizrenski</button>
+            <div class="panel">
+              <ul>
+                  
+                  
+                  
+              </ul>
+            </div><button class="accordion">Kosovsko-Mitrovački</button>
+            <div class="panel">
+              <ul>
+                  
+                  
+                  
+              </ul>
+            </div>
+            
+              <button class="accordion">Kosovsko-Pomoravski</button>
+            <div class="panel">
+              <ul>
+                  
+                  
+                  
+              </ul>
+            </div>
+        </div>
+            
+            <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+            </div>
+
+
+
+    
+
+
+    </div>
+
+    <div id = "bottom">
+            <div id="kontakt">
+
+                <div id="lokacija">
+                    <p id = "firma">SP LASTA BEOGRAD </p>
+                    <img src = "img/logo-trans.png">
+                  <p id = adresa><br> Autoput Beograd-Nis 4 <br>11000 Beograd</p> 
+                </div>
+                
+        <ul>
+            <li id = "naslov"><p>INFO I REZERVACIJE</p></li>
+            <li>0800 334 334</li>
+            <li>+381 11 3348 555</li>
+            <li>+381 11 3348 556</li>
+            <li>+381 11 3348 557</li>
+        </ul>
+
+        <ul>
+            <li class = "naslov"><p>REKLAMACIJE</p></li>
+            <li>+381 11 4351 231</li>
+        </ul>
+
+        <ul>
+            <li class = "naslov"><p>ODNOSI S JAVNOSCU</p></li>
+            <li>+381 11 4351 512</li>
+        </ul>
+
+        <ul>
+                <li class = "naslov"><p>DIREKCIJA</p></li>
+                <li>+381 11 3402 300</li>
+            </ul>
+
+            <ul>
+                    <li class = "naslov"><p>MEDJUNARODNI TRANSPORT</p></li>
+                    <li>0900 334 334</li>
+                </ul>
+            </div>
+            <ul id= "logoLista">
+                    <li><img   src = "img/youtube.png"> </li>
+                    <li><img   src = "img/facebook.png"> </li>
+                    <li><img   src = "img/instagram.png"> </li>
+                    <li><img   src = "img/twitter.png"> </li>
+                    <li><img   src = "img/viber.png"> </li>
+                    <li><img   src = "img/whatsapp.png"> </li>
+                    <li><img   src = "img/google-plus.png"> </li>
+                </ul>
+                <p> Novak Cojbasic & Njegos Trajkovic. 2019. Sva prava zadrzana</p>
+       </div> 
+    </div>
+    
+</body>
+</html>

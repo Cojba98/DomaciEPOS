@@ -1,0 +1,20 @@
+#centar>#desniBar>p{
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+h1{
+    color:#E0102B;
+}
+
+#desniBar{
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+h3{
+    color:rgb(17, 57, 134);
+}

@@ -1,0 +1,34 @@
+#desniBar2{
+    display: flex;
+    flex-direction: row;
+    height: 800px;;
+}
+
+#desniBar2>img{
+    width: 35%;
+    height: 80%;
+    
+    margin: 200px;
+    margin-top: 10px;
+    position: relative;
+    top:0px;
+    left:0px;
+}
+#desniBar2>div{
+    height: 1000px;
+    overflow: scroll;
+}
+
+#okruzi>p{
+    color: rgb(76, 112, 212);
+    font-size: 30px;
+}
+#okruzi>ul>li{
+    font-size: 5px;
+}
+
+#desniBar2>#okruzi{
+   position: relative;
+   left:0px;
+   overflow: scroll;
+}

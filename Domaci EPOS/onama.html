@@ -4,7 +4,8 @@
     <title>Početna</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/onama.css">
-
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
 </head>
 <body>
     
@@ -12,17 +13,25 @@
 
     <div id ="bar">
     
-  <ul id="bar">
-    <li id ="logo"><img src="img/obradjeno.png"></li>
-    <li><a href="index.html">Pocetna</a></li>
-    <li><a href="onama.html">O nama</a> </li>
-    <li><a href="kupovinakarata.html">Kupovina karata</a> </li>
-    <li>Red voznje</li>
-    <li>Iznajmljivanje vozila</li>
-    <li>Medjunarodni transport</li>
-    <li><a href="poslovnice.html">Poslovnice</a> </li>
-    <li>Kontakt</li>
-</ul>
+        <ul id="bar">
+            <li id ="logo"><img  src="img/obradjeno.png"></li>
+            <img class = "logobar" src = "img/home.png">
+            <li><a href="index.html">Pocetna</a></li>
+            <img class = "logobar" src = "img/information (1).png">
+            <li><a href="onama.html">O nama</a> </li>
+            <img class = "logobar" src = "img/ticket.png">
+            <li><a href="kupovinakarata.html">Kupovina karata</a> </li>
+            <img class = "logobar" src = "img/sat.png">
+            <li>Red voznje</li>
+            <img class = "logobar" src = "img/school-bus.png">
+            <li>Iznajmljivanje vozila</li>
+            <img class = "logobar" src = "img/planet-earth.png">
+            <li>Medjunarodni transport</li>
+            <img class = "logobar" src = "img/bus-stop.png">
+            <li><a href="poslovnice.html">Poslovnice</a> </li>
+            <img class = "logobar" src = "img/call.png">
+            <li>Kontakt</li>
+        </ul>
     
     </div>
 
@@ -30,6 +39,9 @@
 
         <div id = "leviBar">
 
+            <div id="trenutnoVreme">
+                <h2>Trenutno vreme:</h2>
+            </div>
 
                 <label for="ime">Korisnicko ime:</label>
                 <input type="text" id="ime" />
@@ -142,5 +154,7 @@
                 <p> Novak Cojbasic & Njegos Trajkovic. 2019. Sva prava zadrzana</p>
        </div> 
     </div>
+    <script src = "js/index.js"></script>
+    
 </body>
 </html>

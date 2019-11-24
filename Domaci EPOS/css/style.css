@@ -1,4 +1,10 @@
 
+#trenutnoVreme{
+  border: solid #E0102B;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 15px;
+}
 
  #bar{
    margin:0;
@@ -26,6 +32,11 @@
 
     
   }
+  
+  #bar>ul{
+    display: flex;
+    align-items: center;
+  }
 
   #sve{
     padding:0;
@@ -37,6 +48,11 @@
 
   #bar>li:hover{
     background-color: rgb(17, 57, 134);
+  }
+
+  .logobar{
+    width: 30px;
+    height: 30px;
   }
 
   a:hover{

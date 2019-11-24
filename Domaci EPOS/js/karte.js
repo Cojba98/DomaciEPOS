@@ -56,7 +56,7 @@ function proveri( podaci ){
         return false;
     }
     
-    datumSplit = voznja.datum1.split('.');
+    datumSplit = voznja.datum1.split('-');
     
     if(!datumSplit[0] || !datumSplit[1] || !datumSplit[2] || datumSplit[0]<1 || datumSplit[0]>31 || datumSplit[1]<1 || datumSplit[1]>12 || datumSplit[2]<2019){
         alert("Datum nije unesen u pravilnom formatu");
@@ -72,7 +72,12 @@ function kupovina(){
          cena = odrediCenu(voznja);
          $("#cena").replaceWith('<h3 id  = "cena" >Cena: ' + cena + '</h3>');
         $("#cena").show();
-
+        $("#potvrda").replaceWith('<p>Polaziste: ' + voznja.polaziste1  + '</p>' +
+        '<p>Odrediste :' + voznja.odrediste1  + '</p>' +
+        '<p>Datum: ' + voznja.datum1 + '</p>' +
+        '<p>Vreme: ' + voznja.vreme1 + '</p>' +
+         '<p>Cena: ' + cena + '<br>' );
+        $("#potvrdaKarte").show();
     }
 }
 
@@ -138,8 +143,23 @@ function kupiKartu(){
 function odrediVreme(){
     var trenutnoVreme = new Date();
     var datumInfo = ("Datum: " + trenutnoVreme.getDate() + "." +(trenutnoVreme.getMonth()+1)+"."+trenutnoVreme.getFullYear());
-    var vremeInfo = ("Vreme: " + trenutnoVreme.getHours() + ":" +trenutnoVreme.getMinutes() );
+   
+   
+    var sekunde =  trenutnoVreme.getSeconds();
+   
+    var sati =   trenutnoVreme.getHours();
+  
+    var minuti = trenutnoVreme.getMinutes();
+
+    if(trenutnoVreme.getSeconds()<10)
+     sekunde = "0" + trenutnoVreme.getSeconds();
+    if(trenutnoVreme.getHours()<10)
+    sati = "0" + trenutnoVreme.getHours();
+    if(trenutnoVreme.getMinutes()<10)
+     minuti = "0" + trenutnoVreme.getMinutes();
+     var vremeInfo = ("Vreme: " + sati + ":" +minuti + ":" + sekunde);
     $("#trenutnoVreme>h2").replaceWith('<p>' + datumInfo+ '</p><p>' + vremeInfo +'</p>');
+    
 }
 
 kupiKartu();

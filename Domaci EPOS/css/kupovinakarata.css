@@ -37,6 +37,14 @@
     color:#1081E0;
 }
 
+#izaberiDatum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
 #destinacija>select:hover{
     border-width: 3px;
 }
@@ -54,6 +62,35 @@
 
 .polaziste{
     width: 100px;
+}
+
+#potvrda{
+    
+    display: none;
+    
+}
+
+p{
+    color: #1081E0;
+    
+}
+
+#potvrdaKarte{ 
+    display:none;
+    width:20%;
+    border-width: 2px;
+    padding: 10px;
+    margin:10px;
+    border: 2px #1081E0 solid;
+    border-radius: 10px;
+    color: grey;
+}
+
+#potvrdaKarte:hover{
+    
+        background-color:#1081E0;
+        color: grey;
+    
 }
 
 #datum{
